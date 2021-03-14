@@ -1,8 +1,8 @@
-// Importar as bibliotecas
+// Importar as bibliotecas e controladores
+const NoteController = require('./NoteController');
 const mongoose = require('mongoose');
 const express = require('express');
 const cors = require('cors');
-const NoteController = require('./NoteController');
 
 // Inicializar as nossa aplicação express
 const app = express();

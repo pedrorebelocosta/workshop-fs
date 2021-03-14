@@ -12,7 +12,6 @@ module.exports = {
 			if (err) next(err);
 			else res.status(201).end();
 		});
-
 	},
 	readAll: function (req, res, next) {
 		Note.find({}, (err, docs) => {
@@ -33,9 +32,8 @@ module.exports = {
 
 		if (!updatedNote) return res.status(500).end();
 		return res.status(200).json(updatedNote);
-
 	},
-	delete: function (req, res, next) {
+	delete: async function (req, res, next) {
 		const noteID = req.params.id;
 		const note = await Note.findOne({ _id: noteID });
 
@@ -43,7 +41,7 @@ module.exports = {
 
 		Note.findOneAndRemove({ _id: noteID }, (err, doc) => {
 			if (err) next(err);
-			else return res.status(202).json(doc);
+			else return res.status(204).end();
 		});
 	}
 }
