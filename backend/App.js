@@ -20,7 +20,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);
 
 // Ligar efetivamente à base de dados MongoDB
-mongoose.connect('mongodb+srv://workshop-fs:workshopmega@cluster0.p1g3m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://workshop:dudewtf123@cluster0.p1g3m.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
