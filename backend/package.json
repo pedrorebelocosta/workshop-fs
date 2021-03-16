@@ -1,19 +1,25 @@
 {
-  "name": "workshop-fs",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pedrorebelocosta/workshop-fs.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pedrorebelocosta/workshop-fs/issues"
-  },
-  "homepage": "https://github.com/pedrorebelocosta/workshop-fs#readme"
+	"name": "workshop-fs",
+	"version": "1.0.0",
+	"description": "",
+	"main": "App.js",
+	"scripts": {
+		"start": "node .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pedrorebelocosta/workshop-fs.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pedrorebelocosta/workshop-fs/issues"
+	},
+	"homepage": "https://github.com/pedrorebelocosta/workshop-fs#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mongoose": "^5.12.0"
+	}
 }
